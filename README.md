@@ -1,0 +1,3 @@
+# FastAPI
+
+**FastAPI training project**
