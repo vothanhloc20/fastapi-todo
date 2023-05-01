@@ -17,7 +17,7 @@ session = database_service.get_session()
 async def login_for_access_token(
     form_data: OAuth2PasswordRequestForm = Depends(), db: Session = session
 ):
-    username = (form_data.username,)
+    username = form_data.username
     password = form_data.password
     user = auth_service.authenticate_user(username, password, db)
 
